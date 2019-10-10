@@ -34,7 +34,7 @@ extern const double CS_LATTICE              =   DELTA_C_LATTICE*sqrt(1.0/3.0);  
 
 extern const double GAMMA_LATTICE           =   1.0;                                                // ADIABATIC CONSTANT IN LATTICE UNIT OR NO UNIT
 extern const double R_GAS_LATTICE           =   1.0;                                                // SPECIFIC GAS CONSTANT IN LATTICE UNIT
-extern const double DENSITY_LATTICE         =   0.22;                                               // DENSITY IN LATTICE UNIT, HARD CODED, FOLLOWING POWERFLOW (ONLY AFFECT CONVERSION FACTOR OF DENSITY&PRESSURE)
+extern const double DENSITY_LATTICE         =   1.0;                                                // DENSITY IN LATTICE UNIT, HARD CODED (ONLY AFFECT CONVERSION FACTOR OF DENSITY&PRESSURE)
 
 extern const double PRESSURE_LATTICE        =   CS_LATTICE*CS_LATTICE*DENSITY_LATTICE/GAMMA_LATTICE;// PRESSURE IN LATTICE UNIT (CS^2 = GAMMA*P/RHO)
 //extern const double PRESSURE_LATTICE      =   R_GAS_LATTICE*DENSITY_LATTICE*TEMPERATURE_LATTICE;  // PRESSURE IN LATTICE UNIT (P = RHO*R_GAS*T)
