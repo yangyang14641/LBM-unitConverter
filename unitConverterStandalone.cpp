@@ -25,7 +25,7 @@ const double CS_LATTICE             =   DELTA_C_LATTICE*sqrt(1.0/3.0);          
 
 const double GAMMA_LATTICE          =   1.0;                                                // ADIABATIC CONSTANT IN LATTICE UNIT, REDUCED VALUE TO REDUCE MACH NUMBER
 const double R_GAS_LATTICE          =   1.0;                                                // SPECIFIC GAS CONSTANT IN LATTICE UNIT
-const double DENSITY_LATTICE        =   0.22;                                               // DENSITY IN LATTICE UNIT, HARD CODED, FOLLOWING POWERFLOW (ONLY AFFECT CONVERSION FACTOR OF DENSITY&PRESSURE)
+const double DENSITY_LATTICE        =   1.0;                                                // DENSITY IN LATTICE UNIT, HARD CODED (ONLY AFFECT CONVERSION FACTOR OF DENSITY&PRESSURE)
 
 const double TEMPERATURE_LATTICE    =   CS_LATTICE*CS_LATTICE/GAMMA_LATTICE/R_GAS_LATTICE;  // TEMPERATURE IN LATTICE UNIT (CS^2 = GAMMA*R_GAS*T)
 const double PRESSURE_LATTICE       =   CS_LATTICE*CS_LATTICE*DENSITY_LATTICE/GAMMA_LATTICE;// PRESSURE IN LATTICE UNIT (CS^2 = GAMMA*P/RHO)
